@@ -22,6 +22,7 @@ Route::get('/posts/{post}', function($post){
 });
 */
 
+//mostrando posts
 Route::get('/posts/create', function(){
     return "Crear un nuevo post";
 });
