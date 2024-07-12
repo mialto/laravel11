@@ -7,14 +7,15 @@ use Illuminate\Http\Request;
 class PostController extends Controller
 {
     public function index(){
-        return "Aqui estan todos los posts";
+        return view('posts.index');
     }
     
     public function create(){
-        return "Aqui se crea un nuevo post";
+        return view('posts.create');
     }
 
     public function show($post){
-        return "Este es el post {$post}";
+        //compact('post'); ['post' => $post]
+        return view('posts.show', compact('post'));
     }
 }
