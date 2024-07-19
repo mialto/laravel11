@@ -19,13 +19,16 @@ Route::get('prueba', function(){
     /*
     //CREAR REGISTROS
     $post = new Post;
-    $post->title = 'Titulo de prueba 3';
-    $post->content = 'Este es el contenido 3';
-    $post->categoria = 'Categoria de prueba 3';
+    $post->title = 'Titulo DE Prueba 4';
+    $post->content = 'Este es el contenido 4';
+    $post->categoria = 'Categoria de prueba 4';
     $post->save();
+    return $post;
     */
 
-    //$post = Post::find(1);
+    $post = Post::find(4);
+    return $post;
+    
     /*
     ///Modificar un registro
     $post = Post::where('title', 'Titulo de prueba 1')->first();
@@ -43,10 +46,10 @@ Route::get('prueba', function(){
     */
 
     //eliminar un registro
-    $post = Post::find(1);
+    /*$post = Post::find(1);
     $post->delete();
-    return "Eliminado";
-    /*return $post;*/
+    return "Eliminado";*/
+   
 });
 
 
