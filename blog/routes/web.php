@@ -26,8 +26,9 @@ Route::get('prueba', function(){
     return $post;
     */
 
-    $post = Post::find(4);
-    return $post;
+    $post = Post::find(1);
+    dd($post->is_active);
+    return $post->is_active;
     
     /*
     ///Modificar un registro
